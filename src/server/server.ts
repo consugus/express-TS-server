@@ -16,7 +16,7 @@ export default class Server {
     }
 
     private publicFolder(){
-        const publicPath = path.resolve(__dirname + "../public");
+        const publicPath = path.resolve(__dirname + "public");
         this.app.use( express.static(publicPath) );
     };
 
